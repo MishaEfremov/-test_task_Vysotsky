@@ -22,11 +22,23 @@
 
         }
 
+        html {
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
         body {
+
             font-family: 'Roboto', sans-serif;
         }
 
         a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
             text-decoration: none;
             color: black;
         }
@@ -69,6 +81,25 @@
         .btn-rds {
             border-radius: 50%;
         }
+
+        .disp-flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style-image: url("image/orange-line.png");
+
+        }
+
+        li {
+            padding-bottom: 2%;
+            padding-top: 2%;
+            padding-left: 1.5rem;
+        }
+
+
 
 
 
@@ -127,51 +158,60 @@
 
         <ul class="nav d-flex align-items-center justify-content-center">
             <li class="nav-item opacity-gray">
-                <a class="nav-link active" href="#"><img src="image/parking-icon.png">Паркинг</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Паркинг</span></a>
             </li>
             <li class="nav-item opacity-gray">
-                <a class="nav-link" href="#"><img src="image/parking-icon.png">Смотровая площадка</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Смотровая<br> площадка</span></a>
             </li>
             <li class="nav-item opacity-gray">
-                <a class="nav-link" href="#"><img src="image/parking-icon.png">Кафе и рестораны</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Кафе <br>и рестораны</span></a>
             </li>
             <li class="nav-item opacity-gray">
-                <a class="nav-link" href="#"><img src="image/parking-icon.png">Музей С.В. Высоцкого</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Музей С.В.<br> Высоцкого </span></a>
             </li>
             <li class="nav-item opacity-gray">
-                <a class="nav-link" href="#"><img src="image/parking-icon.png">Отель</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Отель</span></a>
             </li>
             <li class="nav-item opacity-gray">
-                <a class="nav-link" href="#"><img src="image/parking-icon.png">Конференц зал</a>
+                <a class="nav-link disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
+                        height="40px"><span class="mx-3">Конференц<br> зал</span></a>
             </li>
 
         </ul>
         <section class="container-fluid my-5">
             <img src="image/image-parking.png" class="img-fluid" alt="Responsive image">
-            <div class="container d-flex  align-items-center ">
+            <div class="container d-flex  align-items-start my-5">
 
-                <div class="col">
+                <div class="col-5">
+                    <div class="mb-5">
                     <h1 class="font-weight-bold">Паркинг</h1>
                     <p> Современный крытый 8-этажный паркинг Бизнес Центра «Высоцкий».</p>
+                </div>
                     <h3 class="font-weight-bold">+7 (343) 379-57-68</h3>
-                    <p><img src="image/ic_clock.png">Круглосуточно</p>
+                    <p><img src="image/ic_clock.png" class="mr-2">Круглосуточно</p>
 
                 </div>
-                <div class="col">
-                    <p>Удобный и современный паркинг Бизнес центра «Высоцкий» с возможностью подъездных путей с
-                        ул. Малышева, ул.Красноармейская и ул. Карла Либкнехта, рассчитан на 350 машиномест.</p>
-                    <p> Въезд в паркинг осуществляется с помощью жетонов,
-                        получаемых в автоматических стойках при въезде на парковочный комплекс.
-                        Жетоны подлежат возврату при выезде с парковки.</p>
-                    <p>Услуги паркинга оплачиваются в терминалах, расположенных:
-                        1. При выезде из Паркинга Бизнес Центра «Высоцкий»
-                        2. В центральном холле Бизнес Центра «Высоцкий»
-                        3. При въезде/выезде в Автомойку F1 и Паркинг через Въезд №1.
-                    </p>
-                    <p>Въезд в паркинг осуществляется с помощью жетонов,
-                        получаемых в автоматических стойках при въезде на парковочный комплекс.
-                        Жетоны подлежат возврату при выезде с парковки.</p>
-
+                <div class="col-7">
+                    <ul>
+                        <li>Удобный и современный паркинг Бизнес центра «Высоцкий» с возможностью подъездных путей с
+                            ул. Малышева, ул.Красноармейская и ул. Карла Либкнехта, рассчитан на 350 машиномест.</li>
+                        <li> Въезд в паркинг осуществляется с помощью жетонов,
+                            получаемых в автоматических стойках при въезде на парковочный комплекс.
+                            Жетоны подлежат возврату при выезде с парковки.</li>
+                        <li>Услуги паркинга оплачиваются в терминалах, расположенных:
+                            1. При выезде из Паркинга Бизнес Центра «Высоцкий»
+                            2. В центральном холле Бизнес Центра «Высоцкий»
+                            3. При въезде/выезде в Автомойку F1 и Паркинг через Въезд №1.
+                        </li>
+                        <li>Въезд в паркинг осуществляется с помощью жетонов,
+                            получаемых в автоматических стойках при въезде на парковочный комплекс.
+                            Жетоны подлежат возврату при выезде с парковки.</li>
+                    </ul>
                 </div>
 
             </div>
@@ -179,37 +219,41 @@
         </section>
         <section class="container-fluid my-5">
             <img src="image/image-city.png" class="img-fluid" alt="Responsive image">
-            <div class="container  d-flex  align-items-center">
+            <div class="container  d-flex  align-items-start my-5">
 
-                <div class="col ">
+                <div class="col-5 ">
+                    <div class="mb-5">
                     <h1 class="font-weight-bold">Смотровая площадка</h1>
                     <p> Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
                         186
                         метров.</p>
+                    </div>
                     <h3 class="font-weight-bold">+7 (343) 378-45-45</h3>
-                    <p><img src="image/ic_clock.png">пн-пт 12-22; сб-вс 10-22</p>
+                    <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
 
                 </div>
-                <div class="col">
-                    <p>Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
-                        186
-                        метров.
-                        Отсюда взору открывается поистине фантастический вид:
-                        панорама Екатеринбурга простирается вдаль на 25 километров.</p>
-                    <p> Теперь екатеринбуржцы и гости города смогут открыть для себя Екатеринбург по-новому,
-                        увидеть его весь, как на ладони, оценить красоту и величие.
-                        Все посетители cмотровой площадки могут ближе познакомиться с городом, прослушав
-                        увлекательную
-                        аудио-экскурсию,
-                        в которой раскрываются интересные факты из истории города,
-                        памятников, зданий, парков и других знаковых мест.</p>
-                    <p>
-                        В каждом крупном городе мира высотки — культовое место, и Екатеринбург — не исключение.
-                        Со смотровой площадки небоскреба можно в непривычном ракурсе увидеть и архитектурные
-                        ансамбли
-                        исторической застройки,
-                        и екатеринбургские магистрали, и купола храмов...
-                    </p>
+                <div class="col-7">
+                    <ul>
+                        <li>Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
+                            186
+                            метров.
+                            Отсюда взору открывается поистине фантастический вид:
+                            панорама Екатеринбурга простирается вдаль на 25 километров.
+                        <li> Теперь екатеринбуржцы и гости города смогут открыть для себя Екатеринбург по-новому,
+                            увидеть его весь, как на ладони, оценить красоту и величие.
+                            Все посетители cмотровой площадки могут ближе познакомиться с городом, прослушав
+                            увлекательную
+                            аудио-экскурсию,
+                            в которой раскрываются интересные факты из истории города,
+                            памятников, зданий, парков и других знаковых мест.
+                        <li>
+                            В каждом крупном городе мира высотки — культовое место, и Екатеринбург — не исключение.
+                            Со смотровой площадки небоскреба можно в непривычном ракурсе увидеть и архитектурные
+                            ансамбли
+                            исторической застройки,
+                            и екатеринбургские магистрали, и купола храмов...
+                        </li>
+                    </ul>
 
                 </div>
 
@@ -218,16 +262,19 @@
         </section>
         <section class="container-fluid bottom-bg d-flex  align-items-center justify-content-between">
 
-            <section class="container  white d-flex  align-items-center ">
+            <section class="container  white d-flex  align-items-start my-5">
 
                 <div class="col">
                     <h1 class="font-weight-bold">Музей С.В. Высоцкого</h1>
                     <p> Для всех поклонников творчества известного поэта «Высоцкий» открыт Екатеринбургский музей
                         Владимира
                         Высоцкого.</p>
-                    <h3 class="font-weight-bold">+7 (343) 378-45-45</h3>
-                    <p><img src="image/ic_clock.png">пн-пт 12-22; сб-вс 10-22</p>
-                    <div class="row">
+                    <div class="my-4">
+                        <h3 class="font-weight-bold">+7 (343) 378-45-45</h3>
+
+                        <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
+                    </div>
+                    <div class="row my-5">
                         <div class="col">
                             <h3>200 руб.</h3>
                             <p>Входной билет</p>
@@ -237,23 +284,25 @@
                             <p>Льготный билет</p>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg btn-size-color">Подробнее</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-size-color my-3">Подробнее</button>
 
 
                 </div>
-                <div class="col-6">
-                    <p> В екатеринбургском музее представлен ряд экспонатов, которых нет нигде в мире:
-                        это и легендарный Mercedes 350 W 116, принадлежавший Владимиру Высоцкому с 1976 года;
-                        и восковая фигура Владимира Высоцкого,
-                        созданная скульптором Александром Сильницким по заказу екатеринбургского музея.</p>
-                    <p> Специально для музея были выкуплены 37 лотов, среди которых иконы, картины и украшения,
-                        которые принадлежали семье Высоцкого- Влади.</p>
-                    <p>
-                        Самый ценный экспонат - последнее стихотворение В.Высоцкого,
-                        которое он написал за полтора месяца до своей смерти и посвятил Марине Влади.
-                        Этому документу присвоена категория «Культурная ценность Российской Федерации».
-                    </p>
+                <div class="col-7">
+                    <ul>
 
+                        <li> В екатеринбургском музее представлен ряд экспонатов, которых нет нигде в мире:
+                            это и легендарный Mercedes 350 W 116, принадлежавший Владимиру Высоцкому с 1976 года;
+                            и восковая фигура Владимира Высоцкого,
+                            созданная скульптором Александром Сильницким по заказу екатеринбургского музея.</li>
+                        <li> Специально для музея были выкуплены 37 лотов, среди которых иконы, картины и украшения,
+                            которые принадлежали семье Высоцкого- Влади.</li>
+                        <li>
+                            Самый ценный экспонат - последнее стихотворение В.Высоцкого,
+                            которое он написал за полтора месяца до своей смерти и посвятил Марине Влади.
+                            Этому документу присвоена категория «Культурная ценность Российской Федерации».
+                        </li>
+                    </ul>
                 </div>
 
 
@@ -265,7 +314,7 @@
     </div>
 
 
-   
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
