@@ -13,12 +13,8 @@
     <style>
         .bottom-bg {
             background-image: url("image/background-footer.png");
-            background-repeat: no-repeat;
-            width: 100%;
-
-            max-width: 93.1rem;
-            max-height: 43.75rem;
-            margin: 0.93rem 0.93rem;
+            width: 98%;
+            
 
         }
 
@@ -59,15 +55,14 @@
             color: white;
         }
 
-        .row-flex {
-            display: flex;
-            flex-direction: row;
+        .img-head {
+            width: 95%;
+            height: 95%;
+            max-width: 282px;
+            max-height: 282px;
         }
 
-        .align-center {
-            display: flex;
-            align-items: center;
-        }
+
 
         .btn-size-color {
             background: rgb(248, 161, 0);
@@ -77,7 +72,8 @@
 
         .bg-btn {
             background-image: url("image/video-img.png");
-
+            width: 860px;
+            height: 572px;
         }
 
         .btn-rds {
@@ -95,11 +91,12 @@
 
 
         }
-        .marker-price{
+
+        .marker-price {
             list-style-image: url("image/gray-line.png");
             margin-left: 4%;
             margin-right: 2%;
-            
+
 
         }
 
@@ -138,28 +135,35 @@
 
             background-image: url("image/gray-line.png");
         }
-        .none-m{
-            list-style-type:none;
+
+        .none-m {
+            list-style-type: none;
+
+        }
+
+
+
+        @media (min-width: 576px) {
+         
+        }
+
+
+        @media (min-width: 768px) {
             
         }
 
 
-
-
-
-
-        @media(min-width: 112rem) {
-            html {
-                width: 100%;
-                max-width: 95rem;
-            }
+        @media (min-width: 992px) {
+            
         }
 
-        @media(max-width: 112rem) {
-            html {
-                width: 100%;
-                max-width: 95rem;
-            }
+
+        @media (min-width: 1200px) {
+          html{
+              width: 93rem;
+          }
+          
+
         }
     </style>
     <title>Высоцкий</title>
@@ -169,64 +173,39 @@
 
     <div class="container-fluid ">
 
-        <section class=" container-fluid">
-            <div class="py-5">
-                <div class="row py-5 d-flex  align-items-center justify-content-center">
-                    <div class="col-5 ">
-                        <h1 class="font-weight-bold"> Галлерея</h1>
-                    </div>
-                    <div class="col-5">
-                        Для всех поклонников творчества известного поэта в небоскребе «Высоцкий» открыт Екатеринбургский
-                        музей
-                        Владимира Высоцкого.
-                    </div>
-                    <!--there should be a video here-->
+        <section class=" container-fluid my-5">
+
+            <div class="row my-5 d-flex  align-items-center justify-content-center">
+                <div class="col-12 col-xl-5 ">
+                    <h1 class="font-weight-bold"> Галлерея</h1>
                 </div>
-                <div class="row justify-content-between">
-                    <div class="col  ml-3 my-1  bg-btn d-flex  align-items-center justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-sm btn-rds"><img
-                                src="image/button-video.png"></button>
+                <div class="col-12 col-xl-5">
+                    Для всех поклонников творчества известного поэта в небоскребе «Высоцкий» открыт Екатеринбургский
+                    музей
+                    Владимира Высоцкого.
+                </div>
+                <!--there should be a video here-->
+            </div>
+            <div class="row d-flex  justify-content-center flex-xl-wrap">
+                <div class="col-12 col-xl-7   py-1 bg-btn d-flex  align-items-center justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-sm btn-rds"><img
+                            src="image/button-video.png"></button>
 
-                        <!--there should be a video here-->
+                    <!--there should be a video here-->
 
-                    </div>
-                    <div class="col-5 mr-3">
-                        <img src="image/holl-img1.png" class="p-1" alt="Стенд">
-                        <img src="image/holl-img2.png" class="p-1" alt="Фото с поцелуями">
-                        <img src="image/holl-img3.png" class="p-1" alt="Большой зал памяти">
-                        <img src="image/holl-img4.png" class="p-1" alt="Гитары">
+                </div>
+                <div class="col-12 col-xl-5  mr-n4">
+                    <img src="image/holl-img1.png" class=" img-head p-1" alt="Стенд">
+                    <img src="image/holl-img2.png" class=" img-head p-1" alt="Фото с поцелуями">
+                    <img src="image/holl-img3.png" class=" img-head p-1" alt="Большой зал памяти">
+                    <img src="image/holl-img4.png" class=" img-head p-1" alt="Гитары">
 
-                    </div>
                 </div>
             </div>
+
         </section>
 
-        <!--<ul class="d-flex align-items-center justify-content-center  ">
-            <li class="opacity-gray  ">
-                <a class="disp-flex-center" href="#par"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Паркинг</span></a>
-            </li>
-            <li class="opacity-gray marker-nav ">
-                <a class="disp-flex-center" href="#pl"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Смотровая площадка</span></a>
-            </li>
-            <li class="opacity-gray marker-nav">
-                <a class="disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Кафе и рестораны</span></a>
-            </li>
-            <li class="opacity-gray marker-nav">
-                <a class="disp-flex-center" href="#muz"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Музей С.В. Высоцкого </span></a>
-            </li>
-            <li class="opacity-gray marker-nav">
-                <a class="disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Отель</span></a>
-            </li>
-            <li class="opacity-gray marker-nav ">
-                <a class="disp-flex-center" href="#"><img src="image/parking-icon.png" width="38px"
-                        height="40px"><span class="mx-3">Конференц зал</span></a>
-            </li>-->
-
+        
         <ul class="marker-nav">
             <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#par"><span
                         class="mx-3">Паркинг</span></a></li>
@@ -244,19 +223,20 @@
         </ul>
 
         </ul>
-        <section class="container-fluid my-5">
-            <img src="image/image-parking.png" class="img-fluid" alt="Responsive image">
-            <div class="container d-flex  align-items-start my-5">
+        <section class="container-fluid my-5 ">
 
-                <div class="col-5">
-                    <div class="mb-5">
+            <img src="image/image-parking.png" class="img-fluid" alt="Responsive image">
+            <div class="row d-flex  align-items-start justify-content-center my-5">
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-5 ">
                         <h1 class="font-weight-bold" id="par">Паркинг</h1>
                         <p> Современный крытый 8-этажный паркинг Бизнес Центра «Высоцкий».</p>
                     </div>
                     <h3 class="font-weight-bold">+7 (343) 379-57-68</h3>
                     <p><img src="image/ic_clock.png" class="mr-2">Круглосуточно</p>
                     <ul class="row">
-                        <li class="none-m">
+                        <li class="none-m ml-n4">
                             <h4>200 руб.</h4>
                             <p class="gray">1 час</p>
                         </li>
@@ -266,7 +246,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-5">
                     <ul class="markers">
                         <li>Удобный и современный паркинг Бизнес центра «Высоцкий» с возможностью подъездных путей с
                             ул. Малышева, ул.Красноармейская и ул. Карла Либкнехта, рассчитан на 350 машиномест.</li>
@@ -288,10 +268,11 @@
 
         </section>
         <section class="container-fluid my-5">
-            <img src="image/image-city.png" class="img-fluid" alt="Responsive image">
-            <div class="container  d-flex  align-items-start my-5">
 
-                <div class="col-5 ">
+            <img src="image/image-city.png" class="img-fluid" alt="Responsive image">
+            <div class="row  d-flex  align-items-start justify-content-center my-5">
+
+                <div class="col-12 col-lg-4 ">
                     <div class="mb-5">
                         <h1 class="font-weight-bold" id="pl">Смотровая площадка</h1>
                         <p> Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
@@ -302,7 +283,7 @@
                     <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
 
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-5">
                     <ul class="markers">
                         <li>Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
                             186
@@ -330,11 +311,12 @@
             </div>
 
         </section>
-        <section class="container-fluid bottom-bg d-flex  align-items-center justify-content-between">
+        <section class="container-fluid bottom-bg py-4">
 
-            <section class="container  white d-flex  align-items-start my-5">
+            <div class="row  white d-flex  align-items-start justify-content-center my-5">
 
-                <div class="col">
+                <div class="col-12 col-lg-4">
+
                     <h1 class="font-weight-bold" id="muz">Музей С.В. Высоцкого</h1>
                     <p> Для всех поклонников творчества известного поэта «Высоцкий» открыт Екатеринбургский музей
                         Владимира
@@ -345,7 +327,7 @@
                         <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
                     </div>
                     <ul class="row">
-                        <li class="none-m ">
+                        <li class="none-m ml-n4">
                             <h4>200 руб.</h4>
                             <p class="gray">Входной билет</p>
                         </li>
@@ -354,11 +336,11 @@
                             <p class="gray ">Льготный билет</p>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-primary btn-lg btn-size-color my-3">Подробнее</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-size-color my-3 ">Подробнее</button>
 
 
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-5 ">
                     <ul class="markers">
 
                         <li> В екатеринбургском музее представлен ряд экспонатов, которых нет нигде в мире:
@@ -376,7 +358,7 @@
                 </div>
 
 
-            </section>
+            </div>
 
 
 
