@@ -14,8 +14,6 @@
         .bottom-bg {
             background-image: url("image/background-footer.png");
             width: 98%;
-            
-
         }
 
         html {
@@ -62,8 +60,6 @@
             max-height: 282px;
         }
 
-
-
         .btn-size-color {
             background: rgb(248, 161, 0);
             width: 15rem;
@@ -80,15 +76,35 @@
             border-radius: 50%;
         }
 
-        .disp-flex-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .marker-nav {
+            list-style-image: url("image/gray-line.png");
         }
 
         .marker-nav {
-            list-style-image: url("image/gray-line.png");
+            padding: 0;
+            text-align: center;
+        }
 
+        .marker-navi {
+            list-style-image: url("image/gray-line.png");
+        }
+
+
+        .marker-nav {
+            max-width: 1400px;
+            padding: 0;
+            text-align: center;
+
+        }
+
+
+
+        nav ul li {
+            content: " ";
+            word-spacing: 1.1em;
+            background-repeat: no-repeat;
+            background-position: 50% 60%;
+            list-style-image: url("image/parking-icon.png");
 
         }
 
@@ -97,72 +113,53 @@
             margin-left: 4%;
             margin-right: 2%;
 
-
         }
-
 
         .markers {
             list-style-image: url("image/orange-line.png");
-
         }
-
-
 
         .markers li {
             padding-bottom: 2%;
             padding-top: 2%;
             padding-left: 1.5rem;
-
-
         }
 
         .marker-nav {
-
             padding: 0;
             text-align: center;
         }
 
-        .marker-nav li {
-            display: inline;
-            white-space: wrap;
+        .width-m {
+
+            max-width: 120px;
         }
 
-        ul li:after {
-            content: " ";
-            word-spacing: 1.1em;
-            background-repeat: no-repeat;
-            background-position: 50% 60%;
 
-            background-image: url("image/gray-line.png");
-        }
+
 
         .none-m {
             list-style-type: none;
-
         }
 
-
-
-        @media (min-width: 576px) {
-         
-        }
-
-
-        @media (min-width: 768px) {
-            
-        }
-
-
-        @media (min-width: 992px) {
-            
+        @media(max-width: 1200px) {
+            div .mr-n4{
+                display: none;
+            }
+           
         }
 
 
         @media (min-width: 1200px) {
-          html{
-              width: 93rem;
-          }
-          
+            html {
+                width: 93rem;
+            }
+            .gray-li{
+                display: none;
+            }
+
+
+
 
         }
     </style>
@@ -187,14 +184,14 @@
                 <!--there should be a video here-->
             </div>
             <div class="row d-flex  justify-content-center flex-xl-wrap">
-                <div class="col-12 col-xl-7   py-1 bg-btn d-flex  align-items-center justify-content-center">
+                <div class="col-12 col-xl-7 py-1 bg-btn d-flex  align-items-center justify-content-center">
                     <button type="button" class="btn btn-secondary btn-sm btn-rds"><img
                             src="image/button-video.png"></button>
 
                     <!--there should be a video here-->
 
                 </div>
-                <div class="col-12 col-xl-5  mr-n4">
+                <div class="col-8 col-xl-5  mr-n4">
                     <img src="image/holl-img1.png" class=" img-head p-1" alt="Стенд">
                     <img src="image/holl-img2.png" class=" img-head p-1" alt="Фото с поцелуями">
                     <img src="image/holl-img3.png" class=" img-head p-1" alt="Большой зал памяти">
@@ -204,37 +201,77 @@
             </div>
 
         </section>
+        <!--
+        <nav>
+            <ul class="marker-nav">
+                <li class="opacity-gray "><img src="image/parking-icon.png" width="38px" height="40px"><a href="#par"><spanxt" 
+                            class="mx-3 ">Паркинг</span></a></li>
+                <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#pl"><span 
+                            class="mx-3 ">Смотровая площадка</span></a></li>
+                <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span
+                            class="mx-3 ">Кафе и рестораны</span></a></li>
+                <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#muz"><span  
+                            class="mx-3 ">Музей С.В. Высоцкого</span></a></li>
+                <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span 
+                            class="mx-3 ">Отель</span></a></li>
+                </li>
+                <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span 
+                            class="mx-3 ">Конференц зал</span></a></li>
+            </ul>
+        </nav>
+-->
+        <section class="container-fluid row d-flex justify-content-center my-5 ">
 
-        
-        <ul class="marker-nav">
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#par"><span
-                        class="mx-3">Паркинг</span></a></li>
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#pl"><span
-                        class="mx-3 ">Смотровая площадка</span></a></li>
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span
-                        class="mx-3 ">Кафе и рестораны</span></a></li>
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#muz"><span
-                        class="mx-3 ">Музей С.В. Высоцкого</span></a></li>
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span
-                        class="mx-3 ">Отель</span></a></li>
-            </li>
-            <li class="opacity-gray"><img src="image/parking-icon.png" width="38px" height="40px"><a href="#"><span
-                        class="mx-3 ">Конференц зал</span></a></li>
-        </ul>
 
-        </ul>
+            <div class="ml-5 d-flex flex-row align-items-center opacity-gray width-m ">
+                <img src="image/gray-line.png" width="2px" height="24px" class="mx-2 gray-li">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Паркинг</a>
+            </div>
+            <div class="  mx-5 d-flex flex-row align-items-center opacity-gray width-m">
+                <img src="image/gray-line.png" width="2px" height="24px" class="mx-2 gray-line">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Смотровая площадка</a>
+            </div>
+            <div class=" mx-5 d-flex flex-row align-items-center opacity-gray width-m">
+                <img src="image/gray-line.png" width="2px" height="24px" class="mx-2 gray-line">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Кафе и рестораны</a>
+            </div>
+
+            <div class=" mx-5 d-flex flex-row align-items-center opacity-gray width-m">
+                <img src="image/gray-line.png" width="2px" height="24px" class="mx-2 gray-line">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Музей С.В. Высоцкого</a>
+            </div>
+            <div class=" mx-5 d-flex flex-row align-items-center opacity-gray width-m">
+                <img src="image/gray-line.png " width="2px" height="24px" class="mx-2 gray-line">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Отель</a>
+            </div>
+            <div class=" mr-5 d-flex flex-row align-items-center opacity-gray width-m">
+                <img src="image/gray-line.png" width="2px" height="24px" class="mx-2 gray-line">
+                <img src="image/parking-icon.png" width="38px" height="40px" class="mx-2">
+                <a href="#">Конференц зал</a>
+            </div>
+
+
+
+
+        </section>
+
         <section class="container-fluid my-5 ">
 
             <img src="image/image-parking.png" class="img-fluid" alt="Responsive image">
             <div class="row d-flex  align-items-start justify-content-center my-5">
 
-                <div class="col-12 col-lg-4">
+                <div class="col-8 col-lg-4">
                     <div class="mb-5 ">
                         <h1 class="font-weight-bold" id="par">Паркинг</h1>
                         <p> Современный крытый 8-этажный паркинг Бизнес Центра «Высоцкий».</p>
                     </div>
                     <h3 class="font-weight-bold">+7 (343) 379-57-68</h3>
-                    <p><img src="image/ic_clock.png" class="mr-2">Круглосуточно</p>
+                    <p><img src="image/ic_clock.png" class="mr-2 mb-1">Круглосуточно</p>
                     <ul class="row">
                         <li class="none-m ml-n4">
                             <h4>200 руб.</h4>
@@ -272,7 +309,7 @@
             <img src="image/image-city.png" class="img-fluid" alt="Responsive image">
             <div class="row  d-flex  align-items-start justify-content-center my-5">
 
-                <div class="col-12 col-lg-4 ">
+                <div class="col-8 col-lg-4 ">
                     <div class="mb-5">
                         <h1 class="font-weight-bold" id="pl">Смотровая площадка</h1>
                         <p> Открытая смотровая площадка расположена в Бизнес Центре «Высоцкий» на 52 этаже — на высоте
@@ -280,7 +317,7 @@
                             метров.</p>
                     </div>
                     <h3 class="font-weight-bold">+7 (343) 378-45-45</h3>
-                    <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
+                    <p><img src="image/ic_clock.png" class="mr-2 mb-1">пн-пт 12-22; сб-вс 10-22</p>
 
                 </div>
                 <div class="col-12 col-lg-5">
@@ -313,18 +350,18 @@
         </section>
         <section class="container-fluid bottom-bg py-4">
 
-            <div class="row  white d-flex  align-items-start justify-content-center my-5">
+            <div class="row  white d-flex align-items-start justify-content-center my-5">
 
-                <div class="col-12 col-lg-4">
+                <div class="col-8 col-lg-4 ">
 
-                    <h1 class="font-weight-bold" id="muz">Музей С.В. Высоцкого</h1>
+                    <h1 class="font-weight-bold " id="muz">Музей С.В. Высоцкого</h1>
                     <p> Для всех поклонников творчества известного поэта «Высоцкий» открыт Екатеринбургский музей
                         Владимира
                         Высоцкого.</p>
                     <div class="my-4">
                         <h3 class="font-weight-bold">+7 (343) 378-45-45</h3>
 
-                        <p><img src="image/ic_clock.png" class="mr-2">пн-пт 12-22; сб-вс 10-22</p>
+                        <p><img src="image/ic_clock.png" class="mr-2 mb-1">пн-пт 12-22; сб-вс 10-22</p>
                     </div>
                     <ul class="row">
                         <li class="none-m ml-n4">
@@ -359,9 +396,6 @@
 
 
             </div>
-
-
-
         </section>
     </div>
 
